@@ -1,4 +1,4 @@
-import Logo from "@/utils/assets/logo";
+import Logo from "@/utils/assets/Logo";
 import React from "react";
 
 const AuthLayout = ({ children }) => {
