@@ -5,7 +5,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "regenerator-runtime/runtime";
 
 // Import the layouts
-import RootLayout from "./layouts/rootLayout";
+import RootLayout from "./layouts/RootLayout";
 import DashboardLayout from "./layouts/DashboardLayout";
 
 // Import the components
