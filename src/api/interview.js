@@ -56,4 +56,18 @@ const getFeedbackAPI = async (mockId) => {
 	return jsonResponse;
 };
 
-export { createInterview, getInterview, getInterviewList, postUserAnswerAPI, getFeedbackAPI };
+const postResume = async (formData) => {
+	const response = await fetch(`${BASE_URL}/upload-resume`, {
+		method: "POST",
+		body: formData, // Pass FormData directly as the body
+	});
+
+	if (!response.ok) {
+		throw new Error("Failed to upload resume");
+	}
+
+	const jsonResponse = await response.json();
+	return jsonResponse;
+};
+
+export { createInterview, getInterview, getInterviewList, postUserAnswerAPI, getFeedbackAPI, postResume };

@@ -15,8 +15,8 @@ const HEADER_ROUTES = [
 		path: "/Questions",
 	},
 	{
-		name: "Profile",
-		path: "/Profile",
+		name: "How it works?",
+		path: "/how-it-works",
 	},
 ];
 
@@ -55,7 +55,9 @@ const Header = () => {
 					<UserButton />
 				</SignedIn>
 				<SignedOut>
-					<Link to="/sign-in">Sign In</Link>
+					<Link to="/sign-in">
+						<Button>Sign In</Button>
+					</Link>
 				</SignedOut>
 			</div>
 		</header>
